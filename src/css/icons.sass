@@ -1,0 +1,118 @@
+@import "colors"
+@import "mixins"
+
+.kas-social
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 20px
+  &-icon
+    width: 50px
+    height: 60px
+    border-radius: 50%
+    margin: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    color: $icons
+    background: url('../img/i/soc.png')
+    background-position: 0px 1px
+    background-size: 105px
+    font-size: 18px
+    position: relative
+    transition: all 0.25s ease
+    &::after
+      content: ''
+      position: absolute
+      background: url('../img/i/soc.png')
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background-position: -60px -2px
+      border-radius: 0
+      opacity: 0
+      transition: all 0.25s ease
+    i
+      position: relative
+      z-index: 2
+    @include bp-mob
+      margin: 5px 10px
+    &:hover
+      color: #fff
+      &::after
+        opacity: 1
+
+.kas-login
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 15px
+  &-icon
+    width: 15px
+    height: 20px
+    border-radius: 50%
+    margin-right: 5px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    color: $gray
+    -webkit-transition: color .1s linear
+    transition: color .1s linear
+    font-size: 18px
+    position: relative
+    transition: background 0.5s ease
+
+
+.kas-map
+  position: relative
+  width: 980px
+  height: 100%
+  @include bp-table
+    left: 50%
+    transform: translateX(-50%)
+  @include bp-mob
+    display: none
+  &-icon
+    width: 64px
+    height: 97px
+    position: absolute
+    &-i
+      position: relative
+      width: 100%
+      height: 100%
+      img
+        position: absolute
+        left: 0
+        top: 0
+        transition: opacity 0.25s ease
+      &:hover .i-white
+        opacity: 0
+
+
+  &-email
+    left: 25px
+    top: 490px
+  &-games
+    left: 55px
+    top: 290px
+  &-wifi
+    left: 205px
+    top: 385px
+  &-shopping
+    left: 325px
+    top: 545px
+  &-burlgar
+    left: 325px
+    top: 207px
+  &-messengers
+    left: 245px
+    top: 55px
+  &-apps
+    left: 570px
+    top: 480px
+  &-banking
+    left: 420px
+    top: 370px

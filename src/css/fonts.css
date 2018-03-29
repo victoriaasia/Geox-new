@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'msb';
+	src: url('fonts/msb/msb.eot');
+	src: url('fonts/msb/msb.eot?#iefix')format('embedded-opentype'),
+	url('fonts/msb/msb.woff') format('woff'), url('fonts/msb/msb.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'msm';
+	src: url('fonts/msm/msm.eot');
+	src: url('fonts/msm/msm.eot?#iefix')format('embedded-opentype'),
+	url('fonts/msm/msm.woff') format('woff'), url('fonts/msm/msm.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'hn';
+	src: url('fonts/hn/HelveticaNeue.eot');
+	src: url('fonts/hn/HelveticaNeue.eot?#iefix')format('embedded-opentype'),
+	url('fonts/hn/HelveticaNeue.woff') format('woff'), url('fonts/hn/HelveticaNeue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'hnt';
+	src: url('fonts/hnt/HelveticaNeueCyr-Thin.eot');
+	src: url('fonts/hnt/HelveticaNeueCyr-Thin.eot?#iefix')format('embedded-opentype'),
+	url('fonts/hnt/HelveticaNeueCyr-Thin.woff') format('woff'), url('fonts/hnt/HelveticaNeueCyr-Thin.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Socicon';
+	src:  url('fonts/Socicon/Socicon.eot#iefix') format('embedded-opentype'),
+				url('fonts/Socicon/Socicon.woff2') format('woff2'),
+				url('fonts/Socicon/Socicon.ttf') format('truetype'),
+				url('fonts/Socicon/Socicon.woff') format('woff'),
+				url('fonts/Socicon/Socicon.svg#Socicon') format('svg');
+}

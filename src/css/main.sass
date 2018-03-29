@@ -1,0 +1,325 @@
+@import "colors"
+@import "mixins"
+@import "reset"
+@import "fontawesome"
+@import "fonts"
+@import "icons"
+@import "header"
+
+
+@include bp-mob
+  .g-hidden
+    display: none
+
+*
+  box-sizing: border-box
+.g-link
+  text-decoration: none
+  color: inherit
+.g-bottom, .g-top
+  position: relative
+.g-btn
+  position: relative
+  display: inline-block
+  background: #fff
+  padding: 15px 45px
+  font-size: 18px
+  line-height: 1.2
+  font-family: "hn"
+  white-space: nowrap
+  transition: all ease 0.5s
+  &:hover
+    background: rgba(255,255,255,0.8)
+  > div
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: row
+    align-items: center
+  img
+    width: 20px
+    height: auto
+    margin-left: 10px
+  @include bp-mob
+    margin-bottom: 35px
+    font-size: 16px
+
+.g-pointer
+  cursor: pointer
+.g-flex
+  display: flex
+
+.g-wrapper
+  background: url('../img/mainback.jpg') no-repeat top center
+  width: 100%
+  background-size: 1950px
+  padding: 200px 0 0
+  position: relative
+  @include bp-table
+    overflow-x: hidden
+  @include bp-mob
+    padding: 0
+    background: $lightgray
+  img
+    max-width: 100%
+
+.g-wrapper ::-moz-selection
+  background: $forum
+  color: #fff
+.g-wrapper ::selection
+  background: $forum
+  color: #fff
+
+.g-main
+  max-width: 980px
+  margin: 0 auto
+  text-transform: uppercase
+
+.g-container
+  padding: 0 45px 0 60px
+  @include bp-table
+    padding: 0 3vw 0 3vw
+  @include bp-mob
+    padding: 0
+
+.g-block
+  width: 100%
+  height: 100%
+  > div
+    width: 48%
+    @include bp-mob
+      width: 100%
+      text-align: center
+
+  &-animal
+    position: relative
+    @include bp-mob
+      .g-img img
+        height: 370px
+    .g-block
+      height: 555px
+      background: url('../img/b1.jpg') no-repeat
+      @include bp-mob
+        height: auto
+        flex-direction: column-reverse
+
+  &-white
+    .g-block
+      height: 645px
+      background: url('../img/im3.png') no-repeat
+      background-position: -190px 0
+      @include bp-mob
+        background: $verylight url('../img/im3.png') no-repeat
+        height: 560px
+        background-position: 60% -45px
+        background-size: 520px
+  &-parents
+    height: 760px
+    background: #fff
+    padding: 130px 60px 45px
+    @include bp-mob
+      padding: 0
+      height: auto
+      .g-img img
+        width: 100%
+    .g-block
+      background: $back
+      @include bp-mob
+        background: $lightgray
+        padding: 0
+    .g-top
+      top: -90px
+      left: 20px
+      @include bp-mob
+        top: 0
+        left: 0
+    .g-title
+      color: #fff
+      @include bp-mob
+        color: #000
+  &-route
+    height: 470px
+    @include bp-mob
+      height: 580px
+      background: $verylight url('../img/mob/bg-route.png') no-repeat
+      background-size: cover
+      padding-bottom: 40px
+    .g-title
+      color: #fff
+  &-mexico
+    margin-bottom: 90px
+    @include bp-mob
+      margin-bottom: 0
+    .g-block
+      height: 555px
+      background: url('../img/b2.jpg') no-repeat
+      @include bp-mob
+        height: auto
+        flex-direction: column-reverse
+        position: relative
+        padding: 45px 3vw 70px
+        .g-img-left
+          text-align: left
+          img
+            max-width: 70vw
+        .g-img-right
+          width: 50vw
+          max-width: 320px
+          position: absolute
+          top: 50%
+          right: 3vw
+          transform: translateY(-50%)
+  &-calendar
+    @include bp-mob
+      padding-top: 45px
+      background: $verylight
+    .g-block > div
+      width: 100%
+    .g-title
+      text-align: center
+      br
+        display: none
+        @include bp-mob
+          display: block
+      > *
+        display: inline
+  &-cols
+    background-size: cover !important
+    padding: 45px 55px
+    justify-content: space-between
+    .g-bottom
+      top: 60px
+      @include bp-mob
+        top: 90px
+    @include bp-mob
+      padding: 25px 3vw 35px
+  &-bg
+    background-position: -140% 0
+    justify-content: flex-end
+    align-items: center
+    @include bp-mob
+      flex-direction: column
+
+.g-calendar
+  &-items
+    justify-content: space-between
+    @include bp-table
+      padding: 0 3vw
+    @include bp-mob
+      flex-direction: column
+      padding: 0
+  &-item
+    height: 435px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @include bp-table
+      &:nth-child(2)
+        padding: 0 3vw
+    @include bp-mob
+      align-items: center
+      height: auto
+      min-height: 250px
+      padding-top: 25px
+      &:nth-child(2)
+        border-top: 1px solid darken($lightgray, 20%)
+        border-bottom: 1px solid darken($lightgray, 20%)
+        padding: 25px 0 0
+    .g-btn
+      margin-top: 30px
+      display: block
+      @include bp-table
+        font-size: 15px
+  &-img
+    text-align: center
+  &-title
+    img
+      width: 38px
+      margin-right: 10px
+      @include bp-mob
+        width: 25px
+    @include bp-mob
+      margin-bottom: 15px
+      display: flex
+      align-items: center
+
+
+.g-title
+  padding: 30px 0
+  @include bp-mob
+    text-align: center
+    padding: 5px 0 15px
+  h2
+    font-size: 28px
+    font-family: "hnt"
+    line-height: 1
+    margin-bottom: 10px
+    white-space: nowrap
+    @include bp-mob
+      font-size: 26px
+  p
+    font-size: 22px
+    font-family: "hn"
+    line-height: 1.2
+    @include bp-mob
+      font-size: 18px
+
+.g-subtitle
+  font-size: 17px
+  font-family: "hn"
+  line-height: 1
+  color: $gray
+  padding: 15px 0
+
+
+.g-footer
+  padding: 40px 0
+  text-align: center
+  font-size: 12px
+  font-family: "hn"
+  text-transform: uppercase
+  color: #fff
+  @include bp-mob
+    width: 100%
+    padding: 0
+    position: absolute
+    bottom: 30px
+    left: 50%
+    transform: translateX(-50%)
+    // color: #000
+
+
+.g-social
+  position: absolute
+  display: flex
+  flex-direction: column
+  width: 35px
+  top: 343px
+  left: 25px
+  z-index: 99999
+  @include bp-table
+    left: 10px
+  @include bp-mob
+    flex-direction: row
+    width: 100%
+    bottom: 15px
+    justify-content: center
+    align-items: flex-end
+  &-icon
+    background: $darkgray
+    color: #fff
+    padding: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: background ease 0.5s
+    &:hover
+      background: rgba($darkgray, 0.8)
+    @include bp-mob
+      width: 60px
+      min-width: 60px
+      height: 60px
+      border-radius: 50%
+      font-size: 26px
+      margin-right: 20px
+  &.noscroll

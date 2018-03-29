@@ -1,0 +1,135 @@
+@import "colors"
+@import "mixins"
+
+.g-header
+  width: 100%
+  font-family: "msm"
+  margin-bottom: 30px
+  @include bp-mob
+    background: #fff
+    margin-bottom: 0
+  &-container
+    background: #fff
+    padding: 30px 0
+    max-width: 980px
+    margin: 0 auto
+    @include bp-mob
+      padding: 15px 0
+  &-first
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: $gray
+    font-size: 13px
+    padding: 0 30px
+    > div, > a
+      flex: 1
+    @include bp-mob
+      padding: 0 3vw
+  &-right
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 285px
+    @include bp-mob
+      display: none
+  &-nav
+    padding: 20px 40px 0
+    @include bp-mob
+      display: none
+    ul
+      list-style: none
+      text-align: center
+      font-size: 14px
+      font-family: "msb"
+      text-transform: uppercase
+      display: flex
+      align-items: center
+      justify-content: space-around
+      flex-wrap: nowrap
+      li
+        display: inline-block
+        transition: color 0.5s ease
+        &:hover
+          color: $forum
+
+.g-login
+  white-space: nowrap
+  margin-right: 10px
+  display: flex
+  align-items: center
+  &-icon
+    margin-right: 5px
+
+.g-search
+  &-inner
+    position: relative
+    display: flex
+    align-items: center
+    border: lighten($gray, 25%) 2px solid
+    border-top-left-radius: 20px
+    border-top-right-radius: 20px
+    border-bottom-left-radius: 20px
+    border-bottom-right-radius: 20px
+  &-field
+    background: transparent
+    padding: 5px 5px 5px 15px
+    outline: none !important
+    border: 0 !important
+    font-family: "msm"
+    color: $gray
+  &-btn
+    outline: none !important
+    border: 0 !important
+    background: transparent !important
+    padding: 0 10px 0 0
+
+.g-logo
+  padding: 0 30px
+  @include bp-mob
+    padding: 0
+  img
+    width: 100%
+  &-woman
+    img
+      width: 280px !important
+      @include bp-mob
+        width: 35vw !important
+        max-width: 200px
+  &-kasp
+    width: 280px !important
+    position: absolute
+    top: 0
+    left: 0
+    @include bp-mob
+      width: 40vw !important
+      top: 15px
+      left: 50%
+      transform: translate(-50%)
+      text-align: center
+
+.g-forum
+  text-align: right
+  color: #fff
+  @include bp-mob
+    display: none
+  &-btn
+    background: $forum
+    font-size: 14px
+    color: #fff
+    border-radius: 4px
+    padding: 15px 30px
+    transition: background 0.5s ease
+    &:hover
+      background: darken($forum, 5%)
+
+.g-logo-mob
+  width: 130px
+  max-width: 130px
+  display: none
+  img
+    width: 25vw !important
+    max-width: 100%
+  @include bp-mob
+    display: block
+    text-align: right
