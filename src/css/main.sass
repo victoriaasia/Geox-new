@@ -73,10 +73,13 @@
 .g-main
   max-width: 980px
   margin: 0 auto
+  padding: 0 0 0 25px
   text-transform: uppercase
+  @include bp-mob
+    padding: 0
 
 .g-container
-  padding: 0 45px 0 60px
+  padding: 0 45px 0 35px
   @include bp-table
     padding: 0 3vw 0 3vw
   @include bp-mob
@@ -294,19 +297,17 @@
 
 
 .g-social
-  position: absolute
+  position: fixed
   display: flex
   flex-direction: column
   width: 35px
-  top: 343px
-  left: 25px
   z-index: 99999
   @include bp-table
-    left: 10px
+    left: 1vw
   @include bp-mob
     flex-direction: row
     width: 100%
-    bottom: 15px
+    bottom: 60px
     justify-content: center
     align-items: flex-end
   &-icon
@@ -318,7 +319,14 @@
     justify-content: center
     transition: background ease 0.5s
     &:hover
-      background: rgba($darkgray, 0.8)
+      &.g-vk
+        background: $vk
+      &.g-fb
+        background: $fb
+      &.g-tw
+        background: $tw
+      &.g-ok
+        background: $ok
     @include bp-mob
       width: 60px
       min-width: 60px

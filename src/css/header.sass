@@ -1,9 +1,11 @@
 @import "colors"
 @import "mixins"
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic,cyrillic-ext')
 
 .g-header
   width: 100%
-  font-family: "msm"
+  font-family: 'Roboto', sans-serif
+  font-weight: 500
   margin-bottom: 30px
   @include bp-mob
     background: #fff
@@ -41,7 +43,8 @@
       list-style: none
       text-align: center
       font-size: 14px
-      font-family: "msb"
+      font-family: 'Roboto', sans-serif
+      font-weight: 700
       text-transform: uppercase
       display: flex
       align-items: center
@@ -76,7 +79,7 @@
     padding: 5px 5px 5px 15px
     outline: none !important
     border: 0 !important
-    font-family: "msm"
+    font-family: 'Roboto', sans-serif
     color: $gray
   &-btn
     outline: none !important
