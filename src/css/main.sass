@@ -8,7 +8,7 @@
 
 
 @include bp-mob
-  .g-hidden
+  .g-hidden, .g-branding
     display: none
 
 *
@@ -49,12 +49,21 @@
 .g-flex
   display: flex
 
+.g-branding
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 99
+
 .g-wrapper
   background: url('../img/mainback.jpg') no-repeat top center
   width: 100%
   background-size: 1950px
   padding: 200px 0 0
   position: relative
+  z-index: 9
   @include bp-table
     overflow-x: hidden
   @include bp-mob
@@ -75,6 +84,8 @@
   margin: 0 auto
   padding: 0 0 0 25px
   text-transform: uppercase
+  position: relative
+  z-index: 999
   @include bp-mob
     padding: 0
 
