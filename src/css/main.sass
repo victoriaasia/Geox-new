@@ -80,8 +80,6 @@
 
 .g-container
   padding: 0 45px 0 35px
-  @include bp-table
-    padding: 0 3vw 0 3vw
   @include bp-mob
     padding: 0
 
@@ -119,7 +117,7 @@
   &-parents
     height: 760px
     background: #fff
-    padding: 130px 60px 45px
+    padding: 130px 35px 45px
     @include bp-mob
       padding: 0
       height: auto
@@ -261,9 +259,9 @@
     font-family: "hnt"
     line-height: 1
     margin-bottom: 10px
-    white-space: nowrap
     @include bp-mob
       font-size: 26px
+      white-space: nowrap
   p
     font-size: 22px
     font-family: "hn"
@@ -286,7 +284,6 @@
   font-family: "hn"
   text-transform: uppercase
   color: #fff
-  background: url('../img/b2.jpg') no-repeat
   @include bp-mob
     width: 100%
     padding: 0
@@ -312,8 +309,6 @@
   flex-direction: column
   width: 35px
   z-index: 99999
-  @include bp-table
-    left: 1vw
   @include bp-mob
     flex-direction: row
     width: 100%
