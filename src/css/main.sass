@@ -286,14 +286,24 @@
   font-family: "hn"
   text-transform: uppercase
   color: #fff
+  background: url('../img/b2.jpg') no-repeat
   @include bp-mob
     width: 100%
     padding: 0
+    color: #000
+    // законмментировать, если последних статей нет
     position: absolute
     bottom: 30px
     left: 50%
+    -webkit-transform: translateX(-50%)
     transform: translateX(-50%)
-    color: #000
+    background: transparent
+    // end законмментировать, если последних статей нет
+    // добавить если последних статей нет
+    // padding: 30px 0
+    // end добавить если последних статей нет
+
+
 
 
 .g-social
